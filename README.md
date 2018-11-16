@@ -1,5 +1,7 @@
 # custom-calendar
+[link to heroku](https://customcalendar.herokuapp.com/)
 
+![calendar.png](https://raw.githubusercontent.com/greenmoon1558/custom-calendar/master/src/assets/calendar.png)
 ## Project setup
 ```
 npm install
