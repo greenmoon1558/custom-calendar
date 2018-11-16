@@ -41,7 +41,6 @@ export default {
   },
   data: () => {
     return {
-      // timestamps for table header
       weekdays: {},
       timestamps: Array(8)
         .fill()

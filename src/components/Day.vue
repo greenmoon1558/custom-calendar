@@ -34,11 +34,13 @@ export default {
     }
   },
   methods: {
-    updateallDayActive(){
-      return this.dayTimestamp.length &&
+    updateallDayActive() {
+      return (
+        this.dayTimestamp.length &&
         this.dayTimestamp[0].et ===
-        this.timestamp[this.timestamp.length - 1].et &&
+          this.timestamp[this.timestamp.length - 1].et &&
         this.dayTimestamp[0].bt === this.timestamp[0].bt
+      );
     },
     mousedown(index) {
       this.isMouseDown = true;
@@ -75,7 +77,8 @@ export default {
         }, []);
     },
     selectAllDay() {
-      this.allDayActive ? this.timestamp.forEach(element => {
+      this.allDayActive
+        ? this.timestamp.forEach(element => {
             element.isActive = false;
           })
         : this.timestamp.forEach(element => {

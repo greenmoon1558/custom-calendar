@@ -5,13 +5,10 @@
 </template>
 
 <script>
-import CustomCalendar from "./components/CustomCalendar.vue";
+//import CustomCalendar from "./components/CustomCalendar.vue";
 
 export default {
   name: "app",
-  components: {
-    CustomCalendar
-  },
   data: () => {
     return {
       weekdays: {
