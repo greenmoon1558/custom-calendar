@@ -1,0 +1,50 @@
+.custom-calendar-container,
+#custom-calendar
+  width: 100%
+  max-width: 600px
+  margin: 0 auto
+#custom-calendar
+  border-collapse: collapse 
+.calendar-main-title
+  text-align: left
+  text-transform: uppercase
+  color: $dark-grey
+  font-weight: 700
+  height: 45px
+.calendar-header-cell
+  &--all-day
+    color: $grey
+    text-transform: uppercase
+    font-size: 12px
+    height: 45px
+  &--time
+    color: $grey
+    font-size: 12px
+    height: 45px
+    letter-spacing: 1px
+    text-align: left
+    .cell-time-span
+      position: relative
+      left: -4px
+    &:before
+      content: "|"
+      position: relative
+      top: 17px
+      left: -2px
+      color: $dark-grey
+.clear-btn,
+.save-btn
+  background: $dark-grey
+  border-radius: 5px
+  text-transform: capitalize
+  border: 0px solid $white
+  margin-right: 0
+  min-width: 115px
+  color: $white
+  height: 35px
+  padding: 0 40px
+  margin-top: 20px
+.clear-btn
+  margin: 20px
+.calendar-buttons
+  float: right

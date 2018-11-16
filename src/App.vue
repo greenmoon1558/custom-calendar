@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <custom-calendar/>
+    <custom-calendar v-model="weekdays" />
   </div>
 </template>
 
@@ -12,6 +11,43 @@ export default {
   name: "app",
   components: {
     CustomCalendar
+  },
+  data: () => {
+    return {
+      weekdays: {
+        mo: [
+          {
+            bt: 240,
+            et: 779
+          }
+        ],
+        tu: [],
+        we: [],
+        th: [
+          {
+            bt: 240,
+            et: 779
+          },
+          {
+            bt: 1140,
+            et: 1319
+          }
+        ],
+        fr: [
+          {
+            bt: 660,
+            et: 1019
+          }
+        ],
+        sa: [
+          {
+            bt: 0,
+            et: 1439
+          }
+        ],
+        su: []
+      }
+    };
   }
 };
 </script>

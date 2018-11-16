@@ -1,0 +1,41 @@
+.day-row
+  width: 100%
+.timestamp,
+.day-title,
+.day-allday
+  height: 45px
+  border: 1px solid $border-grey
+  padding: 0px
+  color:  $grey
+  text-transform: uppercase
+  font-size: 14px
+.day-title,
+.day-allday
+  width: calc( 100%/14 )
+  padding: 10px
+.day-allday
+  background: $dark-grey
+  border: 1px solid $grey
+.timestamp
+  background: $white
+  width: calc( 100%/28 )
+.active.timestamp, .active .day-title
+  background: $activeCellColor
+  color: $dark-grey
+.checkbox
+  &-circle
+    visibility: hidden
+    width: 25px
+    height: 25px
+    background: $checkboxCircleColor
+    border-radius: 50%
+  &-checkmark
+    visibility: hidden
+    height: 18px
+    width: 6px
+    border-right: 3px solid $dark-grey
+    border-bottom: 3px solid $dark-grey
+    transform: rotate(45deg) translate(6px, -10px)
+.day-allday.active .checkbox-circle,
+.day-allday.active .checkbox-checkmark
+  visibility: visible
